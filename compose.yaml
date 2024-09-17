@@ -76,6 +76,8 @@ services:
         bench install-app india_compliance;
         bench migrate;
         bench enable-scheduler; 
+        bench set-config developer_mode 1
+        bench clear-cache
 
   db:
     image: mariadb:10.6
